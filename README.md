@@ -15,13 +15,45 @@ This project aims to develop a Brain-Computer Interface (BCI) that allows the us
 - Signal Processing Software (OpenViBE, BrainBay, or similar).
 - Python (for machine learning and controlling laptop actions).
 
+## Project Directory Structure
+
+BCI_Laptop_Control/
+│
+├── data/
+│ ├── raw/ # Store raw EEG data
+│ └── processed/ # Processed data ready for training
+│
+├── models/
+│ ├── train_model.py # Script to train the BCI model
+│ └── trained_models/ # Save trained models here
+│
+├── utils/
+│ ├── preprocessing.py # Functions for data preprocessing
+│ └── features.py # Functions for feature extraction
+│
+├── app/
+│ ├── main.py # Main script for real-time BCI control
+│ └── interface.py # Code for interfacing with the laptop (key presses, etc.)
+│
+└── notebooks/
+└── exploratory_analysis.ipynb # Jupyter notebook for exploratory data analysis
+
+
+
+## Main Components Explanation
+- `data/` Directory: Contains raw and processed EEG data.
+- `models/` Directory: Includes scripts for training the BCI model and saving trained models.
+- `utils/` Directory: Consists of utilities for preprocessing and feature extraction.
+- `app/` Directory: Houses the main application script and interface code for laptop control.
+- `notebooks/` Directory: Jupyter notebooks for data analysis and initial testing.
+
 ## Development Phases
-1. **Scope Definition**: Determining the specific actions to be controlled and the type of brain signals to be used.
-2. **Hardware Setup**: Setting up the EEG headset for data acquisition.
-3. **Signal Processing**: Filtering and extracting features from the EEG data.
-4. **Machine Learning**: Training a model to classify different brain states.
-5. **Action Mapping**: Developing software to map brain signals to keyboard actions.
-6. **Testing and Refinement**: Iteratively testing and improving the system.
+1. Scope Definition
+2. Hardware Setup
+3. Signal Processing
+4. Machine Learning
+5. Action Mapping
+6. Testing and Refinement
 
 ## Safety and Ethical Considerations
 - Ensuring user comfort and safety with non-invasive EEG.
@@ -32,9 +64,8 @@ This project aims to develop a Brain-Computer Interface (BCI) that allows the us
 - Sharing progress and learnings for collaborative improvement.
 
 ## Contact
-- [Alfonso Julián Zapata Velasco]
-- LinkedIn --> https://www.linkedin.com/in/alfonso-julian-zapata-velasco/
+- [Your Name]
+- [Your Contact Information]
 
 ## Acknowledgements
-- GPT BCI Engineer
-
+- [Mention any collaborators, communities, or resources that have supported your project]
